@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeniScan</title>
+    <link rel="icon" type="image/png" sizes="any" href="imgs/others/teniscan_icon.png">
+    <link rel="shortcut icon" type="image/png" href="imgs/others/teniscan_icon.png">
+    <link rel="apple-touch-icon" href="imgs/others/teniscan_icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/formulario_style.css" />
+</head>
+
+<body class="body-bg flex items-center justify-center p-4">
+
+    <div class="card-container">
+        <h1 class="title">Scanner em ação</h1>
+        <p class="subtitle">Selecione uma opção em cada campo</p>
+
+        <form id="selectionForm" class="form">
+
+            <div class="field">
+                <label for="select1" class="label">O que você procura?</label>
+                <p class="warning hidden">Este campo é obrigatório.</p>
+                <div class="input-wrapper">
+                    <select id="select1" name="select1" class="select">
+                        <option value="" disabled selected>-- Selecione --</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="select2" class="label">Vai usar o tênis para:</label>
+                <p class="warning hidden">Este campo é obrigatório.</p>
+                <div class="input-wrapper">
+                    <select id="select2" name="select2" class="select">
+                        <option value="" disabled selected>-- Selecione --</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="select3" class="label">Tipo de pisada</label>
+                <p class="warning hidden">Este campo é obrigatório.</p>
+                <div class="input-wrapper">
+                    <select id="select3" class="select">
+                        <option value="" disabled selected>-- Selecione --</option>
+                    </select>
+                    <button type="button" class="help-btn" data-help-id="help3">?</button>
+                </div>
+
+                <div id="help3" class="tooltip hidden">
+                    <p class="tooltip-title">Verifique o estilo da sua pisada</p>
+                    <img src="imgs/others/tipo_pisada.jpeg" alt="tipos de pisada" cl>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="select4" class="label">Tipo de pé</label>
+                <p class="warning hidden">Este campo é obrigatório.</p>
+                <div class="input-wrapper">
+                    <select id="select4" class="select">
+                        <option value="" disabled selected>-- Selecione --</option>
+                    </select>
+                    <button type="button" class="help-btn" data-help-id="help4">?</button>
+                </div>
+
+                <div id="help4" class="tooltip hidden">
+                    <p class="tooltip-title">Conheça a anatomia do seu pé</p>
+                    <img src="imgs/others/tipo_pe.JPG" alt="tipos de pisada">
+                </div>
+            </div>
+
+            <button type="submit" id="submitButton" class="submit-btn">Escanear</button>
+        </form>
+        <p class="info">Selecione todos os campos para enviar.</p>
+    </div>
+
+    <script src="js/form.js"></script>
+
+</body>
+</html>

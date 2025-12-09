@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.teniscan.model.Tenis;
 
 public interface TenisRepository extends JpaRepository<Tenis, Integer> {
-    List<Tenis> findByUsoIdAndPeIdAndPisadaId(Integer uso, Integer pe, Integer pisada);
+    List<Tenis> findByUsoIdAndPeIdAndPisadaIdAndGeneroId(Integer uso, Integer pe, Integer pisada, Integer genero);
 }

@@ -22,14 +22,22 @@ public class Tenis {
     @Column(nullable = false, length = 200)
     private String nome;
 
-    @Column(nullable = false, length = 200)
-    private String marca;
-
     @Column(nullable = false, length = 500)
     private String img;
 
     @Column(nullable = false, length = 1000)
     private String link;
+
+    @Column(nullable= false, length = 1000)
+    private String descricao;
+
+    @ManyToOne
+    @JoinColumn(name = "marca_id", nullable = false)
+    private Marca marca;
+
+    @ManyToOne
+    @JoinColumn(name = "loja_id", nullable = false)
+    private Loja loja;
 
     @ManyToOne
     @JoinColumn(name = "uso_id", nullable = false)
@@ -42,4 +50,8 @@ public class Tenis {
     @ManyToOne
     @JoinColumn(name = "pisada_id", nullable = false)
     private Tag pisada;
+
+    @ManyToOne
+    @JoinColumn(name = "genero_id", nullable = false)
+    private Tag genero;
 }

@@ -47,16 +47,26 @@ public class TagInitializer {
                 t7.setTipo("pisada");
 
                 Tag t8 = new Tag();
-                t8.setNome("Normal");
+                t8.setNome("Neutra");
                 t8.setTipo("pisada");
                 
                 Tag t9 = new Tag();
                 t9.setNome("Supinada");
                 t9.setTipo("pisada");
 
-                repository.saveAll(List.of(t1, t2, t3, t4, t5, t6, t7, t8, t9));
+                Tag t10 = new Tag();
+                t10.setNome("Feminino");
+                t10.setTipo("genero");
+                
+                Tag t11 = new Tag();
+                t11.setNome("Masculino");
+                t11.setTipo("genero");
 
-                System.out.println("Tags padrão inseridas no banco!");
+                Tag t12 = new Tag();
+                t12.setNome("Unissex");
+                t12.setTipo("genero");
+
+                repository.saveAll(List.of(t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12));
             }
         };
     }

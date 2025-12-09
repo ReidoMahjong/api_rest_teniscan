@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendações</title>
+    <link rel="icon" type="image/png" sizes="any" href="imgs/others/teniscan_icon.png">
+    <link rel="shortcut icon" type="image/png" href="imgs/others/teniscan_icon.png">
+    <link rel="apple-touch-icon" href="imgs/others/teniscan_icon.png">
+    <link rel="stylesheet" href="css/rec.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/others/teniscan_logo.png" alt="Logo">
+        <h1>Recomendações para o seu pé</h1>
+        <p>Com base nas informações passadas, estes são alguns modelos que combinam com seu pé</p>
+    </header>
+
+    <div class="carousel-container">
+        <div class="carousel" id="carousel">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="imgs/tenis/nike_sabrina_um_ion.jpg" alt="Tênis 1" class="main-img">
+                <h2>Tênis Modelo A</h2>
+                <p>Descrição breve do tênis A mas para fim de testes vou escrever um monte de abobrinha aqui pra ver se com textos longos isso aqui funciona rapidão confia em mim cara vai dar certo hahahahahahha</p>
+                <div class="small-images">
+                    <div class="logo-item">
+                        <span class="logo-label">Loja:</span>
+                        <img src="imgs/logos/centauro_logo.png" alt="Centauro">
+                    </div>
+                    <div class="logo-item">
+                        <span class="logo-label">Marca:</span>
+                        <img src="imgs/logos/olympikus_logo.png" alt="Olympikus">
+                    </div>
+                </div>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Feedback -->
+    <section class="feedback-section">
+        <h2>O que você achou das recomendações?</h2>
+        <p>Sua opinião é muito importante para melhorarmos nosso serviço!</p>
+        <form class="feedback-form" id="feedbackForm">
+            <div class="feedback-rating">
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">⭐</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">⭐</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">⭐</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">⭐</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">⭐</label>
+            </div>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        <div class="feedback-success" id="feedbackSuccess">
+            Obrigado pelo seu feedback! 🎉
+        </div>
+    </section>
+
+    <script src="js/rec.js"></script>
+</body>
+</html>

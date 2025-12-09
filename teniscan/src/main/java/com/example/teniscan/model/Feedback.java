@@ -33,4 +33,8 @@ public class Feedback {
     @ManyToOne
     @JoinColumn(name = "pisada_id", nullable = false)
     private Tag pisada;
+
+    @ManyToOne
+    @JoinColumn(name = "genero_id", nullable = false)
+    private Tag genero;
 }

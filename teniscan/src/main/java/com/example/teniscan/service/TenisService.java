@@ -31,7 +31,7 @@ public class TenisService {
         repository.deleteById(id);
     }
 
-    public List<Tenis> findByTags(int uso, int pe, int pisada){
-        return repository.findByUsoIdAndPeIdAndPisadaId(uso, pe, pisada);
+    public List<Tenis> findByTags(int uso, int pe, int pisada, int genero){
+        return repository.findByUsoIdAndPeIdAndPisadaIdAndGeneroId(uso, pe, pisada, genero);
     }
 }
